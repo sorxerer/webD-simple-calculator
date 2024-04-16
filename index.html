@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div class="container" style="display: flex; flex-direction: column;">
+        <div id="layer">
+            <div id="screen">
+                <div id="innerscreen"></div>
+            </div>
+            <div class="buttons">
+                <div class="left">
+                    
+                    <button class="b" onclick="include(1)">1</button>
+                    <button class="b" onclick="include(2)">2</button>
+                    <button class="b" onclick="include(3)">3</button>
+                    <button class="b" onclick="include(4)">4</button>
+                    <button class="b" onclick="include(5)">5</button>
+                    <button class="b" onclick="include(6)">6</button>
+                    <button class="b" onclick="include(7)">7</button>
+                    <button class="b" onclick="include(8)">8</button>
+                    <button class="b" onclick="include(9)">9</button>
+                    <button class="b" onclick="include(0)">0</button>
+                    <button class="b" onclick="include('00')">00</button>
+                    <button class="b" onclick="include('.')">.</button>
+                    
+                    <div class="em">
+                    <button class="equal o equals" onclick="evaluate()">=</button>
+                    <button class="minus o" onclick="include('-')" >-</buttons></button></div>
+
+                    
+                </div>
+                <div class="right">
+                    <button class="operation ac" onclick="clearScreen()">AC</button>
+
+                    <button class="operation" onclick="delette()">&#x2190;</button>
+                    <button class="operation" onclick="include('*')">&times;</button>
+                    <button class="operation" onclick="include('/')">÷</button>
+                    <button class="operation" onclick="include('+')">+</button>
+                    
+                  
+                </div>
+            </div>
+
+        </div>
+        <div><p style="font-size: 10px; color: #aca8a8;">© 2024 sorxerer. All rights reserved.</p></div>
+
+        <script src="script.js"></script>
+        
+    </div>
+    
+</body>
+</html>
